@@ -16,11 +16,11 @@ let msgInp = document.getElementById('msg');
 let userMsgsDiv = document.getElementById('chat-messages');
 
 // newConnection
-socketio.on('newConnection', (data) => {
-  let elementDiv = document.createElement('div');
-  elementDiv.innerHTML = `<div style="background-color: #f2e6ff"> <p> ${data.username}: <span style="margin-left:30px">${data.msg} </span></p> <p> ${data.time} </p> </div> <br>`;
-  userMsgsDiv.appendChild(elementDiv);
-});
+// socketio.on('newConnection', (data) => {
+//   let elementDiv = document.createElement('div');
+//   elementDiv.innerHTML = `<div style="background-color: #f2e6ff"> <p> ${data.username}: <span style="margin-left:30px">${data.msg} </span></p> <p> ${data.time} </p> </div> <br>`;
+//   userMsgsDiv.appendChild(elementDiv);
+// });
 
 // socketio.on('leftChat', (data) => {
 //   let elementDiv = document.createElement('div');

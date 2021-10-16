@@ -17,11 +17,11 @@ let io = socket(server); // WEB SOCKET
 io.on('connection', (socket) => {
   console.log(`New connection with Web Socket`);
 
-  socket.broadcast.emit('newConnection', {
-    username: 'ChatCord Bot',
-    msg: 'New User in Chat',
-    time: time,
-  });
+  // socket.broadcast.emit('newConnection', {
+  //   username: 'ChatCord Bot',
+  //   msg: 'New User in Chat',
+  //   time: time,
+  // });
 
   socket.on('chatMsg', (e) => {
     console.log('Data from client side', e);
